@@ -1,0 +1,24 @@
+{
+  "html": {
+    "snippets": {
+
+      "sdlf": "<sdl.function name=\"${1}\">${2}</sdl.function>",
+      "sdli": "<sdl.import name=\"${1}\">${2}</sdl.import>",
+
+      "vari": "<var.init name=\"${1}\" />",
+      "vars": "<var.set name=\"${1}\">${2}</var.set>",
+      "varv": "<var.value name=\"${1}\" />",
+      
+      "globali": "<global.init name=\"${1}\" />",
+      "globals": "<global.set name=\"${1}\">${2}</global.set>",
+      "globalv": "<global.value name=\"${1}\" />",
+          
+      "foreachlist": "<foreach list=\"${1}\">${2}</foreach>",
+      "foreachvariable": "<foreach listvariable=\"${1}\">${2}</foreach>",
+
+      "switch": "<switch value=\"${1}\">${2}</switch>",
+      "case": "<case value=\"${1}\">${2}</case>"
+
+    }
+  }
+}
