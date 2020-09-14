@@ -1,23 +1,72 @@
 {
   "html": {
     "snippets": {
-
-      "sdlf": "<sdl.function name=\"${1}\">${2}</sdl.function>",
-      "sdli": "<sdl.import name=\"${1}\">${2}</sdl.import>",
-
-      "vari": "<var.init name=\"${1}\" />",
-      "vars": "<var.set name=\"${1}\">${2}</var.set>",
-      "varv": "<var.value name=\"${1}\" />",
-      
-      "globali": "<global.init name=\"${1}\" />",
-      "globals": "<global.set name=\"${1}\">${2}</global.set>",
-      "globalv": "<global.value name=\"${1}\" />",
-          
-      "foreachlist": "<foreach list=\"${1}\">${2}</foreach>",
-      "foreachvariable": "<foreach listvariable=\"${1}\">${2}</foreach>",
+      "sdlfunction": "<sdl.function name=\"${1}\">${2}</sdl.function>",
+      "sdlimport": "<sdl.import template=\"${1}\" />",
 
       "switch": "<switch value=\"${1}\">${2}</switch>",
-      "case": "<case value=\"${1}\">${2}</case>"
+      "case": "<case value=\"${1}\">${2}</case>",
+      "casecontains": "<case.contains value=\"${1}\">${2}</case.contains>",
+      "casedefault": "<case.default>${1}</case.default>",
+      "caseendswith": "<case.endswith value=\"${1}\">${2}</case.endswith>",
+      "caseequals": "<case.equals value=\"${1}\">${2}</case.equals>",
+      "caseequalsignorecase": "<case.equalsignorecase value=\"${1}\">${2}</case.equalsignorecase>",
+      "casegreaterthan": "<case.greaterthan value=\"${1}\">${2}</case.greaterthan>",
+      "casegreaterthanorequalto": "<case.greaterthanorequalto value=\"${1}\">${2}</case.greaterthanorequalto>",
+      "caselessthan": "<case.lessthan value=\"${1}\">${2}</case.lessthan>",
+      "caselessthanorequalto": "<case.lessthanorequalto value=\"${1}\">${2}</case.lessthanorequalto>",
+      "casestartswith": "<case.startswith value=\"${1}\">${2}</case.startswith>",
+
+      "foreach": "<foreach list=\"${1}\">${2}</foreach>",
+      "foreachcurrent": "__foreach.current__",
+
+      "comparecontains": "<compare.contains \"${1}\" \"${2}\">${3}</compare.contains>",
+      "compareendswith": "<compare.endswith \"${1}\" \"${2}\">${3}</compare.endswith>",
+      "compareequals": "<compare.equals \"${1}\" \"${2}\">${3}</compare.equals>",
+      "compareequalsignorecase": "<compare.equalsignorecase \"${1}\" \"${2}\">${3}</compare.equalsignorecase>",
+      "comparegreaterthan": "<compare.greaterthan \"${1}\" \"${2}\">${3}</compare.greaterthan>",
+      "comparegreaterthanorequalto": "<compare.greaterthanorequalto \"${1}\" \"${2}\">${3}</compare.greaterthanorequalto>",
+      "comparelessthan": "<compare.lessthan \"${1}\" \"${2}\">${3}</compare.lessthan>",
+      "comparelessthanorequalto": "<compare.lessthanorequalto \"${1}\" \"${2}\">${3}</compare.lessthanorequalto>",
+      "comparestartswith": "<compare.startswith \"${1}\" \"${2}\">${3}</compare.startswith>",
+
+      "globaladd": "<global.add name=\"${1}\">${2}</global.add>",
+      "globalappend": "<global.append name=\"${1}\">${2}</global.append>",
+      "globalboolean": "<global.boolean name=\"${1}\">${2}</global.boolean>",
+      "globalcontains": "<global.contains name=\"${1}\">${2}</global.contains>",
+      "globalcopy": "<global.copy name=\"${1}\">${2}</global.copy>",
+      "globaldefault": "<global.default name=\"${1}\">${2}</global.default>",
+      "globaldefined": "<global.defined name=\"${1}\">${2}</global.defined>",
+      "globaldivide": "<global.divide name=\"${1}\">${2}</global.divide>",
+      "globalempty": "<global.empty name=\"${1}\">${2}</global.empty>",
+      "globalget": "<global.get name=\"${1}\" />",
+      "globalinit": "<global.init name=\"${1}\" />",
+      "globalmultiply": "<global.multiply name=\"${1}\">${2}</global.multiply>",
+      "globalnumber": "<global.number name=\"${1}\" />",
+      "globalset": "<global.set name=\"${1}\">${2}</global.set>",
+      "globalsize": "<global.size name=\"${1}\" />",
+      "globalvalue": "<global.value name=\"${1}\" />",
+      "globalwhitespace": "<global.whitespace name=\"${1}\">${2}</global.whitespace>",
+
+      "varadd": "<var.add name=\"${1}\">${2}</var.add>",
+      "varappend": "<var.append name=\"${1}\">${2}</var.append>",
+      "varboolean": "<var.boolean name=\"${1}\">${2}</var.boolean>",
+      "varcontains": "<var.contains name=\"${1}\">${2}</var.contains>",
+      "varcopy": "<var.copy name=\"${1}\">${2}</var.copy>",
+      "vardate": "<var.date name=\"${1}\">${2}</var.date>",
+      "vardefault": "<var.default name=\"${1}\">${2}</var.default>",
+      "vardefined": "<var.defined name=\"${1}\">${2}</var.defined>",
+      "vardivide": "<var.divide name=\"${1}\">${2}</var.divide>",
+      "varempty": "<var.empty name=\"${1}\">${2}</var.empty>",
+      "varget": "<var.get name=\"${1}\" />",
+      "varinit": "<var.init name=\"${1}\" />",
+      "varmultiply": "<var.multiply name=\"${1}\">${2}</var.multiply>",
+      "varnumber": "<var.number name=\"${1}\" />",
+      "varset": "<var.set name=\"${1}\">${2}</var.set>",
+      "varsize": "<var.size name=\"${1}\" />",
+      "varvalue": "<var.value name=\"${1}\" />",
+      "varwhitespace": "<var.whitespace name=\"${1}\">${2}</var.whitespace>"
+
 
     }
   }
